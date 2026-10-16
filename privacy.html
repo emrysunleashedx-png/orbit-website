@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy | Orbit</title>
+<meta name="description" content="How the Orbit wallet handles your data: what stays on your phone, which public services the app contacts, and what Orbit never collects.">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#E3F1FD">
+<link rel="canonical" href="https://YOUR-DOMAIN.com/privacy.html">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Manrope:wght@500;700;800&display=swap">
+<link rel="stylesheet" href="legal.css">
+</head>
+<body>
+
+<!--
+  DRAFT for your review. Written from what the Orbit app's code does as of October 2026.
+  Have a lawyer check it before you rely on it, and update it whenever the app changes
+  (for example if you add analytics, accounts, a backend, or swap/buy providers).
+  Highlighted yellow items are placeholders you must fill in.
+-->
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Orbit home"><span class="mark"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><circle cx="19" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><path d="M10.4 21.9a10 10 0 0 0 9.941-15.416"/><path d="M13.5 2.1a10 10 0 0 0-9.841 15.416"/></svg></span><span>orbit<i>.</i></span></a>
+    <a class="back" href="index.html">Back to home</a>
+  </div>
+</header>
+
+<main class="doc">
+  <h1>Privacy Policy</h1>
+  <p class="meta">Last updated October 15, 2026</p>
+
+  <div class="summary">
+    <h2>The short version</h2>
+    <ul>
+      <li>Orbit has no accounts and asks for no email, name or phone number.</li>
+      <li>Your recovery phrase is encrypted and stays on your phone. It is never sent to Orbit or anyone else.</li>
+      <li>The app has no analytics, advertising or tracking tools.</li>
+      <li>To show balances, prices and quotes, the app contacts a few public services. They can see your IP address and, for balances and history, your public wallet addresses. Details are below.</li>
+      <li>Blockchains are public. Anything you send on-chain can be seen by anyone, permanently.</li>
+    </ul>
+  </div>
+
+  <h2>1. Who we are</h2>
+  <p>Orbit is a self-custody crypto wallet app and website operated by <mark class="todo">[Legal name of your company or developer]</mark> (“Orbit”, “we”, “us”). You can reach us at <mark class="todo">[privacy@your-domain.com]</mark>.</p>
+
+  <h2>2. What stays on your device</h2>
+  <p>Orbit stores the following on your phone only. We never receive it.</p>
+  <ul>
+    <li><strong>Your encrypted recovery phrase.</strong> It is locked with a key derived from your password and kept in your phone’s secure storage (iOS Keychain or Android Keystore). The plain phrase is never saved.</li>
+    <li><strong>A counter of failed password attempts,</strong> used to slow down guessing.</li>
+    <li><strong>Preferences:</strong> your wallet’s display name, your default network, your auto-lock setting and the tokens on your watchlist.</li>
+  </ul>
+  <p>Removing the wallet in the app, or uninstalling Orbit, deletes this data from your phone. If you haven’t backed up your recovery phrase, you will lose access to your funds.</p>
+
+  <h2>3. What the app sends, and to whom</h2>
+  <p>Orbit has no servers of its own that store your data. To work, the app talks directly to the public services below. Each receives the network details every internet request includes, such as your IP address, and is governed by its own privacy policy.</p>
+  <div class="table">
+    <div><b>Public blockchain nodes</b><span>Solana, Ethereum and Polygon RPC providers (for example PublicNode, LlamaRPC and the public Solana and Polygon endpoints). Used to read balances and history and to broadcast the transactions you confirm. They receive your public wallet addresses and the transactions you send.</span></div>
+    <div><b>Block explorer APIs</b><span>Used to load your Ethereum and Polygon transaction history and to link to transaction pages. They receive your public wallet addresses.</span></div>
+    <div><b>CoinGecko</b><span>Used for token prices and 7-day charts. It receives the token identifiers requested. It does not receive your wallet addresses.</span></div>
+    <div><b>Jupiter</b><span>Used for Solana swap quotes. It receives the token pair, amount and slippage setting you request. A quote request does not include your wallet address.</span></div>
+  </div>
+  <p>The app does not send your recovery phrase, password or private keys to any of these services. When you confirm a transaction, it is signed on your phone and only the signed transaction is broadcast.</p>
+
+  <h2>4. Blockchains are public</h2>
+  <p>Wallet addresses and transactions on Solana, Ethereum and Polygon are visible to anyone and cannot be edited or deleted by us or anyone else. Anyone who learns that an address is yours can see its balance and history. Orbit cannot reverse or hide on-chain activity.</p>
+
+  <h2>5. This website</h2>
+  <p>This website does not use cookies, analytics or advertising trackers. It loads fonts from Google Fonts, which means Google receives your IP address and browser details when a page loads. If you follow a link to an app store or another site, that site’s policy applies.</p>
+
+  <h2>6. What we don’t do</h2>
+  <ul>
+    <li>We don’t collect or hold your recovery phrase, password or private keys, so we can’t recover them for you.</li>
+    <li>We don’t sell your data or show you ads.</li>
+    <li>We don’t build profiles of you. We have nothing to build them from.</li>
+  </ul>
+
+  <h2>7. Security</h2>
+  <p>Orbit encrypts your recovery phrase on your device and asks your phone to block screenshots and screen recording while the phrase is shown. No software is perfectly secure, and the safety of your funds also depends on how you protect your phone, your password and your written backup. Never share your recovery phrase with anyone, including anyone claiming to be Orbit.</p>
+
+  <h2>8. Children</h2>
+  <p>Orbit is not intended for people under 18, and we do not knowingly collect information from them.</p>
+
+  <h2>9. Your choices</h2>
+  <p>Because we don’t hold your personal data, there is usually nothing for us to access, correct or delete. You control everything stored on your phone and can remove it at any time. If you contact us and believe we hold information about you, tell us and we will respond as required by the law where you live.</p>
+
+  <h2>10. Changes to this policy</h2>
+  <p>If we change how Orbit handles data, we will update this page and the date at the top. If a change is significant, for example adding analytics or accounts, we will tell you in the app before it takes effect.</p>
+
+  <h2>11. Contact</h2>
+  <p>Questions about this policy: <mark class="todo">[privacy@your-domain.com]</mark></p>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>© 2026 Orbit Wallet. Orbit is self-custody software. Crypto can lose value and transactions can’t be reversed.</p>
+    <nav aria-label="Footer"><a href="index.html">Home</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
+  </div>
+</footer>
+</body>
+</html>
