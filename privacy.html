@@ -7,7 +7,7 @@
 <meta name="description" content="How the Orbit wallet handles your data: what stays on your phone, which public services the app contacts, and what Orbit never collects.">
 <meta name="robots" content="index,follow">
 <meta name="theme-color" content="#E3F1FD">
-<link rel="canonical" href="https://YOUR-DOMAIN.com/privacy.html">
+<link rel="canonical" href="https://YOUR-PROJECT.vercel.app/privacy.html">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,90 +16,178 @@
 <link rel="stylesheet" href="legal.css">
 </head>
 <body>
-
 <!--
-  DRAFT for your review. Written from what the Orbit app's code does as of October 2026.
-  Have a lawyer check it before you rely on it, and update it whenever the app changes
-  (for example if you add analytics, accounts, a backend, or swap/buy providers).
-  Highlighted yellow items are placeholders you must fill in.
+  Built from the Orbit Privacy Policy / Terms of Service / Privacy Commitments / Fees documents
+  provided by the owner, with app-specific facts verified against the app source on Oct 16, 2026.
+  Yellow items are placeholders to fill in. Have a lawyer review before relying on this page.
+  Update this page whenever the app's data practices change.
 -->
-
 <header class="top">
   <div class="wrap">
     <a class="brand" href="index.html" aria-label="Orbit home"><span class="mark"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><circle cx="19" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><path d="M10.4 21.9a10 10 0 0 0 9.941-15.416"/><path d="M13.5 2.1a10 10 0 0 0-9.841 15.416"/></svg></span><span>orbit<i>.</i></span></a>
     <a class="back" href="index.html">Back to home</a>
   </div>
 </header>
-
 <main class="doc">
-  <h1>Privacy Policy</h1>
-  <p class="meta">Last updated October 15, 2026</p>
-
-  <div class="summary">
-    <h2>The short version</h2>
-    <ul>
-      <li>Orbit has no accounts and asks for no email, name or phone number.</li>
-      <li>Your recovery phrase is encrypted and stays on your phone. It is never sent to Orbit or anyone else.</li>
-      <li>The app has no analytics, advertising or tracking tools.</li>
-      <li>To show balances, prices and quotes, the app contacts a few public services. They can see your IP address and, for balances and history, your public wallet addresses. Details are below.</li>
-      <li>Blockchains are public. Anything you send on-chain can be seen by anyone, permanently.</li>
-    </ul>
-  </div>
-
-  <h2>1. Who we are</h2>
-  <p>Orbit is a self-custody crypto wallet app and website operated by <mark class="todo">[Legal name of your company or developer]</mark> (“Orbit”, “we”, “us”). You can reach us at <mark class="todo">[privacy@your-domain.com]</mark>.</p>
-
-  <h2>2. What stays on your device</h2>
-  <p>Orbit stores the following on your phone only. We never receive it.</p>
-  <ul>
-    <li><strong>Your encrypted recovery phrase.</strong> It is locked with a key derived from your password and kept in your phone’s secure storage (iOS Keychain or Android Keystore). The plain phrase is never saved.</li>
-    <li><strong>A counter of failed password attempts,</strong> used to slow down guessing.</li>
-    <li><strong>Preferences:</strong> your wallet’s display name, your default network, your auto-lock setting and the tokens on your watchlist.</li>
-  </ul>
-  <p>Removing the wallet in the app, or uninstalling Orbit, deletes this data from your phone. If you haven’t backed up your recovery phrase, you will lose access to your funds.</p>
-
-  <h2>3. What the app sends, and to whom</h2>
-  <p>Orbit has no servers of its own that store your data. To work, the app talks directly to the public services below. Each receives the network details every internet request includes, such as your IP address, and is governed by its own privacy policy.</p>
-  <div class="table">
-    <div><b>Public blockchain nodes</b><span>Solana, Ethereum and Polygon RPC providers (for example PublicNode, LlamaRPC and the public Solana and Polygon endpoints). Used to read balances and history and to broadcast the transactions you confirm. They receive your public wallet addresses and the transactions you send.</span></div>
-    <div><b>Block explorer APIs</b><span>Used to load your Ethereum and Polygon transaction history and to link to transaction pages. They receive your public wallet addresses.</span></div>
-    <div><b>CoinGecko</b><span>Used for token prices and 7-day charts. It receives the token identifiers requested. It does not receive your wallet addresses.</span></div>
-    <div><b>Jupiter</b><span>Used for Solana swap quotes. It receives the token pair, amount and slippage setting you request. A quote request does not include your wallet address.</span></div>
-  </div>
-  <p>The app does not send your recovery phrase, password or private keys to any of these services. When you confirm a transaction, it is signed on your phone and only the signed transaction is broadcast.</p>
-
-  <h2>4. Blockchains are public</h2>
-  <p>Wallet addresses and transactions on Solana, Ethereum and Polygon are visible to anyone and cannot be edited or deleted by us or anyone else. Anyone who learns that an address is yours can see its balance and history. Orbit cannot reverse or hide on-chain activity.</p>
-
-  <h2>5. This website</h2>
-  <p>This website does not use cookies, analytics or advertising trackers. It loads fonts from Google Fonts, which means Google receives your IP address and browser details when a page loads. If you follow a link to an app store or another site, that site’s policy applies.</p>
-
-  <h2>6. What we don’t do</h2>
-  <ul>
-    <li>We don’t collect or hold your recovery phrase, password or private keys, so we can’t recover them for you.</li>
-    <li>We don’t sell your data or show you ads.</li>
-    <li>We don’t build profiles of you. We have nothing to build them from.</li>
-  </ul>
-
-  <h2>7. Security</h2>
-  <p>Orbit encrypts your recovery phrase on your device and asks your phone to block screenshots and screen recording while the phrase is shown. No software is perfectly secure, and the safety of your funds also depends on how you protect your phone, your password and your written backup. Never share your recovery phrase with anyone, including anyone claiming to be Orbit.</p>
-
-  <h2>8. Children</h2>
-  <p>Orbit is not intended for people under 18, and we do not knowingly collect information from them.</p>
-
-  <h2>9. Your choices</h2>
-  <p>Because we don’t hold your personal data, there is usually nothing for us to access, correct or delete. You control everything stored on your phone and can remove it at any time. If you contact us and believe we hold information about you, tell us and we will respond as required by the law where you live.</p>
-
-  <h2>10. Changes to this policy</h2>
-  <p>If we change how Orbit handles data, we will update this page and the date at the top. If a change is significant, for example adding analytics or accounts, we will tell you in the app before it takes effect.</p>
-
-  <h2>11. Contact</h2>
-  <p>Questions about this policy: <mark class="todo">[privacy@your-domain.com]</mark></p>
+<h1>Privacy Policy</h1>
+<p class="meta">Effective date: October 16, 2026 &middot; Last updated: October 16, 2026</p>
+<div class="summary"><h2>Orbit at a glance</h2><ul><li>No account and no email. You can create or import a wallet without giving us any personal details.</li><li>Your recovery phrase, password and private keys never leave your phone. They are encrypted and kept in your phone&rsquo;s secure storage.</li><li>The app has no analytics, advertising or crash-reporting tools, and it does not send us diagnostics.</li><li>To show balances, prices and quotes, the app contacts the public services listed in Section 8. They can see your IP address and, for balances and history, your public wallet addresses.</li><li>Blockchains are public. Anything you do on-chain can be seen by anyone, permanently.</li></ul></div>
+<h2>Our privacy commitments</h2>
+<h3>No mandatory registration</h3>
+<p>You can create or import a supported wallet without providing an email address or creating an Orbit account, subject to any applicable legal requirements for particular features.</p>
+<h3>Self-custody</h3>
+<p>Orbit is designed to let you keep control of your wallet credentials and authorize transactions yourself. Orbit does not claim ownership of assets held in your self-custodial wallet.</p>
+<h3>Wallet credentials</h3>
+<p>Your private keys and recovery phrase remain under your control. Orbit stores them only on your device, encrypted, using your phone&rsquo;s secure storage. We only state that wallet credentials never leave your device because we have checked that this is how the app works (see Section 3D).</p>
+<h3>Third-party connectivity</h3>
+<p>Orbit connects to blockchain networks, a token-price provider and a swap-quote provider. These services may receive technical information or public blockchain data needed to process requests. Section 8 lists them.</p>
+<h3>No sale of personal information</h3>
+<p>Orbit does not sell personal information in exchange for money.</p>
+<h3>Your responsibility</h3>
+<p>You are responsible for protecting your device, securing your recovery phrase and verifying transactions before you authorize them.</p>
+<h3>Transparency</h3>
+<p>This Privacy Policy describes Orbit&rsquo;s actual data practices, including any analytics, diagnostic tools, external APIs and optional integrations. We will update it, and tell you, before those practices change.</p>
+<h2>1. Introduction</h2>
+<p>Welcome to Orbit (&ldquo;Orbit,&rdquo; &ldquo;we,&rdquo; &ldquo;our,&rdquo; or &ldquo;us&rdquo;).</p>
+<p>Orbit is a cryptocurrency wallet application designed to help users securely manage digital assets, interact with blockchain networks, view token balances, and access supported blockchain services.</p>
+<p>Your privacy matters to us. This Privacy Policy explains what information we collect, how we use and protect it, when information may be shared, and what choices you have when using Orbit.</p>
+<p>By using Orbit, you acknowledge that you have read this Privacy Policy. If you do not agree with it, please discontinue your use of Orbit.</p>
+<h2>2. Our approach to privacy</h2>
+<p>Orbit is designed to give users control over their digital assets.</p>
+<p>Orbit does not require access to your private keys or recovery phrase, and we cannot independently control your self-custodial wallet. You are responsible for maintaining control of your wallet credentials.</p>
+<p>Never share your recovery phrase or private keys with anyone claiming to represent Orbit. Orbit will never ask you to disclose your recovery phrase through an unsolicited message, social media account, or customer support conversation.</p>
+<h2>3. Information we may collect</h2>
+<h3>A. Information you provide</h3>
+<p>We may collect information you voluntarily provide, including:</p>
+<ul>
+<li>Information submitted through customer support.</li>
+<li>Feedback, bug reports, and feature requests.</li>
+<li>Information you provide when participating in promotions or community activities.</li>
+<li>Information you provide when contacting us about a technical problem.</li>
+</ul>
+<p>Please do not include passwords, recovery phrases, private keys, or other sensitive wallet credentials in support requests.</p>
+<h3>B. Wallet and blockchain information</h3>
+<p>When you create, import, or use a wallet, Orbit processes information necessary to provide wallet functionality, including:</p>
+<ul>
+<li>Public wallet addresses.</li>
+<li>Blockchain network selections.</li>
+<li>Public transaction identifiers and transaction history.</li>
+<li>Token balances and associated blockchain data.</li>
+<li>Transaction requests and transaction statuses.</li>
+<li>Publicly available information retrieved from blockchain networks.</li>
+</ul>
+<p>This processing happens in the app on your device, and the public services in Section 8 receive the public parts of it. Blockchain transactions and wallet addresses may be publicly visible and permanently recorded on their respective networks. Orbit cannot guarantee that a public wallet address cannot be associated with your identity by third parties.</p>
+<h3>C. Technical information</h3>
+<p>The Orbit app does not currently include analytics, advertising or crash-reporting tools, and it does not send technical diagnostics to us. As with any internet request, the public services the app contacts (Section 8) receive connection metadata such as your IP address. If we add analytics, crash reporting or similar tools in the future, we will update this policy and notify you before they take effect.</p>
+<h3>D. Information the app does not collect</h3>
+<p>Orbit&rsquo;s app does not transmit your recovery phrase, password or private keys. Based on a review of the app&rsquo;s source code as of October 2026, your recovery phrase is used only on your device: to encrypt it for storage, to derive your addresses, and to sign transactions locally. The only data placed in network requests is public data, such as your public addresses, public transaction data, transactions you have already signed, and token pairs and amounts for swap quotes. This is not a substitute for an independent security audit.</p>
+<h3>What is stored on your device</h3>
+<ul>
+<li>Your encrypted recovery phrase, in your phone&rsquo;s secure storage (iOS Keychain or Android Keystore).</li>
+<li>A counter of failed password attempts, used to slow down guessing.</li>
+<li>Preferences: your wallet&rsquo;s display name, default network, auto-lock setting and token watchlist.</li>
+</ul>
+<p>This data never reaches us. Erasing the wallet in the app, or uninstalling Orbit, removes it from your phone.</p>
+<h2>4. How we use information</h2>
+<p>We use information we process to:</p>
+<ul>
+<li>Create and operate wallet functionality.</li>
+<li>Display token balances and transaction information.</li>
+<li>Connect to supported blockchain networks.</li>
+<li>Submit transactions that you authorize.</li>
+<li>Respond to support requests.</li>
+<li>Detect suspicious activity, abuse, and security threats.</li>
+<li>Maintain application reliability and diagnose problems you report to us.</li>
+<li>Comply with applicable legal obligations.</li>
+<li>Enforce our Terms of Service.</li>
+<li>Develop and improve Orbit&rsquo;s features.</li>
+</ul>
+<p>We do not sell personal information in exchange for money. Any additional uses of personal information will be subject to applicable law and, where required, your consent.</p>
+<h2>5. Blockchain transparency</h2>
+<p>Orbit interacts with public blockchain networks.</p>
+<p>When you conduct a blockchain transaction, information such as your public wallet address, the receiving address, the transaction amount, the transaction identifier, and the transaction time may be visible to the public.</p>
+<p>This information is governed by the design of the relevant blockchain network rather than solely by Orbit&rsquo;s privacy practices. We generally cannot delete, modify, or reverse information permanently recorded on a public blockchain.</p>
+<p>You should assume that transactions made using a public blockchain may be traceable.</p>
+<h2>6. Private keys and recovery phrases</h2>
+<p>In a self-custodial wallet, control of the private keys generally determines control of the associated digital assets.</p>
+<p>Orbit stores your wallet credentials only on your device, encrypted with a key derived from your password.</p>
+<p>You are responsible for:</p>
+<ul>
+<li>Keeping your recovery phrase confidential.</li>
+<li>Securing your device.</li>
+<li>Protecting any passwords or authentication methods you configure.</li>
+<li>Maintaining a secure backup of your recovery phrase.</li>
+<li>Avoiding phishing websites, malicious applications, and fraudulent support accounts.</li>
+</ul>
+<p>Anyone who obtains the recovery phrase or private keys for a wallet may be able to control its assets. If you lose access to your recovery phrase and cannot access your wallet, Orbit will be unable to restore access to your assets.</p>
+<h2>7. Cookies and similar technologies</h2>
+<p>This website does not use cookies, analytics or advertising trackers. It loads fonts from Google Fonts, which means Google receives your IP address and browser details when a page loads. The Orbit app does not use cookies.</p>
+<p>If we add cookies or similar technologies in the future, for purposes such as security, analytics, performance monitoring or remembering preferences, we will update this policy and, where required by law, request consent before using non-essential ones. You may be able to control cookies through your browser settings.</p>
+<h2>8. Third-party services</h2>
+<p>Orbit relies on third-party providers to support certain features. These providers receive the information needed to perform their services, such as IP addresses, public wallet addresses, network requests, or transaction details. Their handling of information is governed by their own privacy policies and contractual obligations.</p>
+<h3>Services the Orbit app contacts today</h3>
+<ul>
+<li><strong>Blockchain RPC providers.</strong> Solana (the public Solana RPC and PublicNode), Ethereum (LlamaRPC and PublicNode) and Polygon (PublicNode and polygon-rpc.com). Used to read balances and history and to broadcast transactions you confirm. They receive your public addresses, the queries made, and transactions you have signed.</li>
+<li><strong>Blockscout.</strong> Used to load Ethereum and Polygon transaction history. Receives your public addresses.</li>
+<li><strong>CoinGecko.</strong> Used for token prices and charts. Receives the token identifiers requested, not your wallet addresses.</li>
+<li><strong>Jupiter.</strong> Used for Solana swap quotes. Receives the token pair, amount and slippage setting. A quote request does not include your wallet address.</li>
+<li><strong>Links and sharing.</strong> &ldquo;View on explorer&rdquo; opens Solscan, Etherscan or Polygonscan in your browser, and some help links open external sites such as a US Federal Trade Commission article about crypto scams. Those sites&rsquo; own policies apply. If you export your activity as a CSV, the file goes to whichever app you choose in your phone&rsquo;s share sheet.</li>
+</ul>
+<p>Orbit does not control these services and cannot guarantee their availability, security, or privacy practices. You should review their policies before relying on them. If we add other integrations, such as analytics, crash reporting, wallet connectivity, bridges or other swap providers, we will list them here first.</p>
+<h2>9. Information sharing</h2>
+<p>We may share limited information in the following circumstances.</p>
+<h3>A. Service providers</h3>
+<p>We may share information with trusted service providers that help us operate, secure, maintain, and improve Orbit. Such sharing is limited to information reasonably necessary for the services they provide.</p>
+<h3>B. Legal requirements</h3>
+<p>We may disclose information when reasonably necessary to comply with applicable law, a valid legal process, or a lawful request from an authorized authority.</p>
+<h3>C. Security and protection</h3>
+<p>We may disclose information where reasonably necessary to investigate suspected fraud, protect users, enforce our terms, or safeguard our rights and systems.</p>
+<h3>D. Business transfers</h3>
+<p>Information may be transferred as part of a merger, acquisition, financing, restructuring, or sale of relevant business assets, subject to applicable legal requirements.</p>
+<h3>E. With your direction or consent</h3>
+<p>We may share information when you request or authorize us to do so, including when you connect Orbit to third-party applications.</p>
+<p>We do not sell personal information to data brokers. Because Orbit has no accounts and keeps wallet data on your device, the information we hold about most users is minimal, and often none.</p>
+<h2>10. Data retention</h2>
+<p>We retain personal information only for as long as reasonably necessary to fulfill the purposes described in this Policy, comply with legal obligations, resolve disputes, and protect our legitimate interests. This mainly means support messages you send us.</p>
+<p>Data stored on your device stays there until you erase the wallet or uninstall Orbit. Public blockchain records may remain permanently available even after you stop using Orbit. Information retained by independent third-party services is subject to their own retention practices.</p>
+<h2>11. Data security</h2>
+<p>We use reasonable technical and organizational measures designed to protect information against unauthorized access, loss, misuse, alteration, and disclosure. In the app, these include encrypting your recovery phrase with a key derived from your password (scrypt and AES-256-GCM), storing it in your phone&rsquo;s secure storage, locking the app automatically, and asking your phone to block screenshots and screen recording while your recovery phrase is shown.</p>
+<p>No application, device, network, or storage system can be guaranteed to be completely secure. You are responsible for maintaining the security of your device and protecting your wallet credentials.</p>
+<p>If you suspect that your wallet has been compromised, take immediate steps to secure any remaining assets using a trusted device and a secure wallet environment.</p>
+<h2>12. Your privacy rights</h2>
+<p>Depending on your location and applicable law, you may have rights to:</p>
+<ul>
+<li>Request access to personal information we hold about you.</li>
+<li>Request correction of inaccurate information.</li>
+<li>Request deletion of eligible personal information.</li>
+<li>Object to or restrict certain processing.</li>
+<li>Withdraw consent where processing is based on consent.</li>
+<li>Request a copy of certain information in a portable format.</li>
+<li>Lodge a complaint with the relevant data protection authority.</li>
+</ul>
+<p>These rights may be subject to legal exceptions and limitations. To exercise an applicable privacy right, contact us using the details in Section 16. We may need to verify your identity before processing a request.</p>
+<p>We cannot delete information that we do not control, including permanent public blockchain records and data held only on your device, which you can remove yourself.</p>
+<h2>13. Children&rsquo;s privacy</h2>
+<p>Orbit is not intended for children who are below the minimum age permitted to use the service under applicable law.</p>
+<p>We do not knowingly collect personal information from children in violation of applicable privacy laws. If you believe a child has provided personal information to us inappropriately, contact us so we can assess the situation and take appropriate action.</p>
+<h2>14. International data transfers</h2>
+<p>Orbit and its service providers may process information in countries other than your country of residence. Where applicable law requires safeguards for international transfers, we will take reasonable steps to implement the required protections.</p>
+<h2>15. Changes to this Privacy Policy</h2>
+<p>We may update this Privacy Policy to reflect changes to Orbit, our practices, legal requirements, or the services we provide.</p>
+<p>When changes are material, we will take reasonable steps to notify users through the application, our website, or another appropriate channel. The updated Policy will state its revised effective date.</p>
+<p>Your continued use of Orbit after an updated Policy becomes effective will be subject to applicable law and any consent requirements that apply to the changes.</p>
+<h2>16. Contact us</h2>
+<p>If you have questions about this Privacy Policy or wish to exercise your privacy rights, contact:</p>
+<ul>
+<li><strong>Service:</strong> Orbit Wallet</li>
+<li><strong>Privacy contact:</strong> <mark class="todo">[Insert official privacy email]</mark></li>
+<li><strong>Website:</strong> <mark class="todo">[Insert official Orbit website]</mark></li>
+</ul>
+<p>Please do not send recovery phrases, private keys, wallet passwords, or other secret credentials when contacting us.</p>
 </main>
-
 <footer>
   <div class="wrap">
-    <p>© 2026 Orbit Wallet. Orbit is self-custody software. Crypto can lose value and transactions can’t be reversed.</p>
+    <p>&copy; 2026 Orbit Wallet. Orbit is self-custody software. Crypto can lose value and transactions can&rsquo;t be reversed.</p>
     <nav aria-label="Footer"><a href="index.html">Home</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
   </div>
 </footer>
